@@ -1,0 +1,19 @@
+---
+title: Intro
+author: mkeutgen
+date: '2021-12-21'
+slug: intro
+categories: []
+tags:
+  - goals
+  - statistics
+  - earth science
+---
+
+Hello everyone. This is an introductory post to my blog or at least what is supposed to become one at one point. As of December 2022, I am a student in statistics at KU Leuven and I studied geology before that. I am very interested in climate science, statistics and the environment. 
+
+This blog initial purpose is to be useful for me and maybe for some other people. I want it to be an open diary where I collect and share relevant informations for my topics of interest. As human memory is fallible, I make of this website my external memory.
+
+Yours,
+
+Maxime
