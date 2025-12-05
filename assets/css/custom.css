@@ -1,0 +1,76 @@
+:root {
+  --accent: #27408b;
+  --accent-hover: #1d2f68;
+  --paper: #f7f2e9;
+  --color-primary: var(--accent);
+  --color-primary-hover: var(--accent-hover);
+  --color-border: var(--accent);
+  --color-callout: #27408b;
+  --color-text: #1c1a18;
+  --color-text-muted: #3e3a34;
+  --color-background: var(--paper);
+  /* Dark mode overrides to avoid red accents */
+  --color-primary-dark: var(--accent);
+  --color-primary-hover-dark: var(--accent-hover);
+  --color-border-dark: var(--accent);
+}
+
+body {
+  background: var(--paper);
+  color: #1c1a18;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+a,
+.post-title a,
+.brand a {
+  color: var(--accent);
+  border-bottom: 3px solid var(--accent);
+  border-block-end: 3px solid var(--accent);
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-hover);
+  background-color: #dfe4f5;
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+ul > li::before {
+  color: var(--accent);
+}
+
+header,
+.content {
+  max-width: 740px;
+}
+
+header {
+  border-bottom: 1px solid #e2d9c9;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.brand h1 {
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.post-title {
+  font-weight: 600;
+}
+
+.post-meta {
+  color: #5a5146;
+}
+
+code {
+  background: #efe6d8;
+}
