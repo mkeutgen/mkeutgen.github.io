@@ -72,8 +72,8 @@ jobs:
     - uses: actions/cache@v4
       with:
         path: resources/
-        key: ${{ runner.os }}-hugo-resources-${{ hashFiles('assets/**/*', 'config/**/*',
-          'hugo.yaml', 'package.json') }}
+        key: ${{ runner.os }}-hugo-resources-${{ hashFiles('assets/**/*', 'config.toml',
+          'package.json') }}
         restore-keys: |
           ${{ runner.os }}-hugo-resources-
 
@@ -86,7 +86,7 @@ jobs:
         HUGO_ENVIRONMENT: production
       run: |
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
-        hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        hugo --config config.toml --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
     - name: Generate Pagefind search index (if applicable)
       run: |
