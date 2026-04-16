@@ -1,76 +1,391 @@
+/* ──────────────────────────────────────────────
+   FT / Data-Journalism — Theme Override
+   ────────────────────────────────────────────── */
+
 :root {
-  --accent: #27408b;
-  --accent-hover: #1d2f68;
-  --paper: #f7f2e9;
-  --color-primary: var(--accent);
-  --color-primary-hover: var(--accent-hover);
-  --color-border: var(--accent);
-  --color-callout: #27408b;
-  --color-text: #1c1a18;
-  --color-text-muted: #3e3a34;
-  --color-background: var(--paper);
-  /* Dark mode overrides to avoid red accents */
-  --color-primary-dark: var(--accent);
-  --color-primary-hover-dark: var(--accent-hover);
-  --color-border-dark: var(--accent);
+  /* FT-inspired palette */
+  --ft-paper:    #FFF1E5;
+  --ft-cream:    #F2DFCE;
+  --ft-teal:     #0D7680;
+  --ft-teal-dim: rgba(13, 118, 128, 0.3);
+  --ft-teal-dk:  #0A5E66;
+  --ft-oxford:   #0F2540;
+  --ft-muted:    #66605C;
+  --ft-rule:     #CCC1B7;
+
+  --accent:       var(--ft-teal);
+  --accent-hover: var(--ft-teal-dk);
+  --paper:        var(--ft-paper);
+}
+
+/* ── Base ────────────────────────────────────── */
+
+html {
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: var(--ft-oxford);
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background: var(--paper);
-  color: #1c1a18;
-  font-family: "Georgia", "Times New Roman", serif;
+  background: var(--ft-paper);
+  color: var(--ft-oxford);
+  margin: 0;
+  padding: 0 1rem;
 }
+
+p {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.75;
+  margin-block: 0.8em;
+  letter-spacing: -0.003em;
+}
+
+::selection {
+  background: var(--ft-teal);
+  color: #fff;
+}
+
+/* ── Kill hacker-style heading prefixes ──────── */
+
+h1::before, h2::before, h3::before,
+h4::before, h5::before, h6::before {
+  content: none !important;
+}
+
+/* ── Typographic hierarchy ───────────────────── */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: 700;
+  color: var(--ft-oxford);
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-block: 1.2em 0.35em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-block: 2em 0.4em;
+  padding-block-end: 0.25em;
+  border-block-end: 1px solid var(--ft-rule);
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-block: 1.6em 0.3em;
+}
+
+h4 { font-size: 1.05rem; }
+h5 { font-size: 1rem; font-weight: 600; }
+h6 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ── Links — subtle, teal underlines ─────────── */
 
 a,
 .post-title a,
 .brand a {
-  color: var(--accent);
-  border-bottom: 3px solid var(--accent);
-  border-block-end: 3px solid var(--accent);
-}
-
-a:hover {
-  color: var(--accent-hover);
+  color: var(--ft-teal);
   text-decoration: underline;
-  text-decoration-color: var(--accent-hover);
-  background-color: #dfe4f5;
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
+  text-decoration-color: var(--ft-teal-dim);
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  border-bottom: none !important;
+  border-block-end: none !important;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
 }
 
-::selection {
-  background: var(--accent);
-  color: #ffffff;
+a:hover,
+a:focus {
+  color: var(--ft-teal-dk);
+  text-decoration-color: var(--ft-teal-dk);
+  background: transparent !important;
+  outline: none !important;
+}
+
+/* ── Nav — sans-serif, uppercase, quiet ────────── */
+
+header {
+  border-bottom: 1px solid var(--ft-rule);
+  padding-block-end: 0.6rem;
+  margin-block: 2rem 2.5rem;
+}
+
+header .main {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+header .main a {
+  color: var(--ft-oxford);
+  text-decoration: none;
+}
+header .main a:hover { color: var(--ft-teal); }
+
+nav a {
+  color: var(--ft-muted);
+  text-decoration: none !important;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 500;
+  padding-block-end: 0.15em;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--ft-teal);
+  border-block-end: 2px solid var(--ft-teal) !important;
+}
+
+/* ── Layout — narrow reading column ──────────── */
+
+.content, header {
+  max-width: 680px;
+  max-inline-size: 680px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+/* ── Lists — real bullets, not asterisks ─────── */
+
+ul {
+  list-style: disc;
+  padding-inline-start: 1.5em;
+}
+
+ul li {
+  text-indent: 0;
+  padding-block: 0.1em;
 }
 
 ul > li::before {
-  color: var(--accent);
+  content: none !important;
 }
 
-header,
-.content {
-  max-width: 740px;
+ol {
+  padding-inline-start: 1.5em;
 }
 
-header {
-  border-bottom: 1px solid #e2d9c9;
-  padding-bottom: 0.75rem;
-  margin-bottom: 1.5rem;
+/* ── Blockquotes — teal rule, italic ─────────── */
+
+blockquote {
+  border-inline-start: 3px solid var(--ft-teal);
+  padding-inline-start: 1.25em;
+  margin-inline: 0;
+  margin-block: 1.5em;
+  color: var(--ft-muted);
+  font-style: italic;
 }
 
-.brand h1 {
+/* ── HR — single fine rule ───────────────────── */
+
+hr {
+  border: none;
+  border-block-start: 1px solid var(--ft-rule);
+  margin-block: 2.5em;
+}
+
+/* ── Tables — clean, minimal (FT-style) ──────── */
+
+table {
+  width: 100%;
+  inline-size: 100%;
+  border-collapse: collapse;
+  margin-block: 1.5rem;
+  font-size: 0.92rem;
+  box-shadow: none;
+  border-radius: 0;
+  overflow: visible;
+}
+
+table th {
+  background: transparent;
+  font-weight: 700;
+  text-align: start;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-block-end: 2px solid var(--ft-oxford);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ft-muted);
+}
+
+table td {
+  padding: 0.55rem 0.75rem;
+  border: none;
+  border-block-end: 1px solid var(--ft-rule);
+}
+
+table tr:nth-child(even) {
+  background: transparent;
+}
+
+table tr:hover {
+  background: rgba(13, 118, 128, 0.04);
+}
+
+/* ── Code ─────────────────────────────────────── */
+
+code {
+  background: var(--ft-cream);
+  padding: 0.12em 0.3em;
+  border-radius: 3px;
+  font-size: 0.87em;
+  font-family: 'IBM Plex Mono', 'Menlo', 'Consolas', monospace;
+}
+
+pre {
+  background: var(--ft-oxford);
+  color: #e8e2d8;
+  padding: 1.2em 1.4em;
+  border-radius: 3px;
+  border: none;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+/* ── Footer — understated ────────────────────── */
+
+footer {
+  border-block-start: 1px solid var(--ft-rule);
+  padding-block: 1.5rem;
+  margin-block-start: 3rem;
+  color: var(--ft-muted);
+  font-size: 0.85rem;
+}
+
+.soc {
+  border-block-end: none !important;
+}
+
+.soc:hover,
+.soc:focus {
+  color: var(--ft-teal);
+  outline: none !important;
+}
+
+.border {
+  border-color: var(--ft-rule);
+}
+
+/* ── Post metadata ───────────────────────────── */
+
+.post-meta, .meta, time {
+  color: var(--ft-muted);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.82rem;
+  text-transform: uppercase;
   letter-spacing: 0.04em;
-  font-weight: 600;
 }
 
 .post-title {
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
-.post-meta {
-  color: #5a5146;
+/* ── Figure captions ─────────────────────────── */
+
+figure h4::before {
+  content: none !important;
 }
 
-code {
-  background: #efe6d8;
+figure h4 {
+  font-size: 0.85rem;
+  color: var(--ft-muted);
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* ── Tags — pill-style, muted ────────────────── */
+
+.tags li::before {
+  content: none !important;
+  margin: 0;
+}
+
+.tags a {
+  border: 1px solid var(--ft-rule) !important;
+  padding: 0.2rem 0.65rem;
+  border-radius: 2px;
+  font-size: 0.78rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ft-muted);
+  text-decoration: none !important;
+}
+
+.tags a:hover,
+.tags a:focus {
+  background: var(--ft-teal) !important;
+  border-color: var(--ft-teal) !important;
+  color: #fff;
+}
+
+/* ── Images — subtle frame ───────────────────── */
+
+img {
+  border: 1px solid var(--ft-rule);
+  border-radius: 2px;
+}
+
+/* ── KaTeX ───────────────────────────────────── */
+
+.katex-display {
+  margin-block: 1.5em;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* ── Dark mode ───────────────────────────────── */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ft-paper:    #1A1A2E;
+    --ft-cream:    #2A2A3E;
+    --ft-oxford:   #E8E2D8;
+    --ft-muted:    #9A948E;
+    --ft-rule:     #3A3A4E;
+    --ft-teal:     #29A0B1;
+    --ft-teal-dim: rgba(41, 160, 177, 0.35);
+    --ft-teal-dk:  #5BC0CD;
+  }
+
+  body {
+    background: var(--ft-paper);
+    color: var(--ft-oxford);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--ft-oxford);
+  }
+
+  header .main a { color: var(--ft-oxford); }
+
+  table th { border-block-end-color: var(--ft-oxford); }
+
+  pre { background: #111122; }
 }
