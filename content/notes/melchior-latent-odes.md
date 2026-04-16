@@ -4,7 +4,7 @@ kicker = "Seminar notes — Peter Melchior"
 deck = "Latent ODEs as a structural prior for time-series — from supernova classification to scheduling the learning rate of gradient descent."
 date = "2026-04-15"
 tags = ["machine-learning", "neural-odes", "astronomy", "optimisation"]
-author = "Maxime Keutgen"
+author = "Maxime Keutgen De Greef"
 toc = true
 +++
 

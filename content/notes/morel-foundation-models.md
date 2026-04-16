@@ -4,7 +4,7 @@ kicker = "Seminar notes — Rudy Morel"
 deck = "Can a transformer trained across many PDE families learn to discover the evolution operator itself? A talk on DISCO and what it means for inferring physics from data."
 date = "2026-04-15"
 tags = ["machine-learning", "physics", "foundation-models", "pdes"]
-author = "Maxime Keutgen"
+author = "Maxime Keutgen De Greef"
 toc = true
 +++
 

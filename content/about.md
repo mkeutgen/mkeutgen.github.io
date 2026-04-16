@@ -3,7 +3,7 @@ title = "About"
 description = "About Maxime Keutgen"
 date = "2024-12-05"
 aliases = ["about-me","about"]
-author = "Maxime Keutgen"
+author = "Maxime Keutgen De Greef"
 +++
 
 Hi, I’m Maxime. I’m a graduate student in atmospheric and oceanic sciences at Princeton University, working in the Resplandy Research Group on ocean and atmosphere dynamics.

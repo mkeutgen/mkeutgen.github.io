@@ -4,7 +4,7 @@ kicker = "Seminar notes — Amir Ali Ahmadi"
 deck = "Sum-of-squares optimisation as a tractable way to enforce qualitative knowledge — equilibria, monotonicity, energy decrease — on a learnt polynomial vector field."
 date = "2026-04-15"
 tags = ["machine-learning", "dynamical-systems", "optimisation", "control"]
-author = "Maxime Keutgen"
+author = "Maxime Keutgen De Greef"
 toc = true
 +++
 

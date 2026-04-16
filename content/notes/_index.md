@@ -1,8 +1,8 @@
 +++
 title = "Seminar Notes"
-description = "Notes from talks I find worth writing down."
+description = "Personal notes from seminars and reading groups."
 +++
 
-A running collection of notes from seminars, workshops and reading groups
-I attend at Princeton and elsewhere. Notes are written for my own future
-reference, with full citations harmonised at the bottom of each entry.
+Notes I take during seminars and reading groups at Princeton and elsewhere,
+kept here for my own reference. Citations are listed at the bottom of each
+entry.

@@ -2,7 +2,7 @@
 title = "CV"
 description = "Academic CV"
 date = "2024-12-05"
-author = "Maxime Keutgen"
+author = "Maxime Keutgen De Greef"
 type = "page"
 +++
 
