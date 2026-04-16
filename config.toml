@@ -20,7 +20,7 @@ pygmentscodefencesguesssyntax = true
 mode = "auto" # light, dark, or auto
 useCDN = true
 katex = true
-subtitle = "On oceans, carbon, and the statistics that reveal them."
+subtitle = "Princeton AOS PhD student — ocean, carbon, statistics, climate modelling."
 customcss = ["css/custom.css"]
 customCSS = ["css/custom.css"]
 
