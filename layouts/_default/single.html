@@ -1,0 +1,51 @@
+{{ define "main" }}
+<main>
+  <article class="article">
+
+    <header class="article-header">
+      {{ with .Params.kicker }}
+        <p class="kicker">{{ . }}</p>
+      {{ end }}
+
+      <h1 class="article-title">{{ .Title }}</h1>
+
+      {{ with .Params.deck }}
+        <p class="deck">{{ . }}</p>
+      {{ end }}
+
+      <div class="byline">
+        <span class="byline-author">{{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Params.author | default "Maxime Keutgen" }}{{ end }}</span>
+        <span class="byline-sep">·</span>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ dateFormat "2 January 2006" .Date }}</time>
+        <span class="byline-sep">·</span>
+        <span class="reading-time">{{ .ReadingTime }} min read</span>
+        {{ if .Draft }}<span class="byline-sep">·</span><span class="draft-label">Draft</span>{{ end }}
+      </div>
+    </header>
+
+    <div class="article-body-wrap">
+      {{ if and (isset .Params "toc") (.Params.toc) }}
+        <aside class="article-toc">
+          <p class="toc-title">Contents</p>
+          {{ .TableOfContents }}
+        </aside>
+      {{ end }}
+
+      <section class="article-body">
+        {{ .Content }}
+      </section>
+    </div>
+
+    {{ if .Params.tags }}
+      <footer class="article-tags">
+        <ul class="tags">
+          {{ range .Params.tags }}
+            <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+          {{ end }}
+        </ul>
+      </footer>
+    {{ end }}
+
+  </article>
+</main>
+{{ end }}

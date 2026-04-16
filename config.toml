@@ -1,6 +1,6 @@
 baseURL = "https://mkeutgen.github.io/"
 languageCode = "en-us"
-title = "Maxime Keutgen"
+title = "Maxime Keutgen De Greef"
 theme = "archie"
 copyright = "Maxime Keutgen"
 pygmentsstyle = "monokai"
@@ -20,7 +20,7 @@ pygmentscodefencesguesssyntax = true
 mode = "auto" # light, dark, or auto
 useCDN = true
 katex = true
-subtitle = "Studying carbon and oxygen in the ocean, using novel statistical tools."
+subtitle = "On oceans, carbon, and the statistics that reveal them."
 customcss = ["css/custom.css"]
 customCSS = ["css/custom.css"]
 

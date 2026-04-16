@@ -1,0 +1,4 @@
+{{- $id := .Get "id" | default (printf "sn-%d" .Ordinal) -}}
+<label for="{{ $id }}" class="sidenote-toggle">&#8224;</label>
+<input type="checkbox" id="{{ $id }}" class="sidenote-checkbox" />
+<aside class="sidenote">{{ .Inner | markdownify }}</aside>

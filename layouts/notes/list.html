@@ -1,0 +1,26 @@
+{{ define "main" }}
+<main>
+  <header class="section-header">
+    <p class="kicker">Section</p>
+    <h1 class="section-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="deck">{{ . }}</p>{{ end }}
+    {{ with .Content }}<div class="section-intro">{{ . }}</div>{{ end }}
+  </header>
+
+  <ul class="post-index">
+    {{ range .Pages.ByDate.Reverse }}
+      <li class="post-index-item">
+        <a class="post-index-link" href="{{ .RelPermalink }}">
+          <p class="post-index-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ dateFormat "2 Jan 2006" .Date }}</time>
+            {{ with .Params.kicker }}<span class="post-index-kicker">{{ . }}</span>{{ end }}
+            {{ if .Draft }}<span class="draft-label">Draft</span>{{ end }}
+          </p>
+          <h2 class="post-index-title">{{ .Title }}</h2>
+          {{ with .Params.deck }}<p class="post-index-deck">{{ . }}</p>{{ end }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}
