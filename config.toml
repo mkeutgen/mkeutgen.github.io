@@ -7,9 +7,19 @@ pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$'], ['\[', '\]']]
+          inline = [['$', '$'], ['\(', '\)']]
+
 [params]
 mode = "auto" # light, dark, or auto
-useCDN = false
+useCDN = true
+katex = true
 subtitle = "Studying carbon and oxygen in the ocean, using novel statistical tools."
 customcss = ["css/custom.css"]
 customCSS = ["css/custom.css"]
