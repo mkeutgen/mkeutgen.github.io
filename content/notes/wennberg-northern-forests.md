@@ -50,8 +50,8 @@ large austral boreal forest.
 
 ### Solar-Induced Chlorophyll Fluorescence
 
-Solar-Induced Fluorescence (SIF) arises from the absorption of sunlight by
-chlorophyll in the photosystem. Crucially, it is not merely a proxy for green cover: it tracks
+Solar-Induced Chlorophyll Fluorescence (SIF) arises from the absorption of
+sunlight by chlorophyll in the photosystem. Crucially, it is not merely a proxy for green cover: it tracks
 **photosynthetic activity**. A leaf under afternoon heat stress fluoresces
 less than the same leaf in the morning.
 
