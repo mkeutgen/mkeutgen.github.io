@@ -12,7 +12,7 @@ I completed my undergraduate degree in geosciences at the University of Namur, a
 
 Then, I moved to Leuven to pursue my Master's degree in statistics at the Catholic University of Leuven, a 600-year-old institution that counts among its alumni many Renaissance figures, among them Mercator, after whom the map projection is named.
 
-For my general written exam at Princeton, I worked on the eddy subduction pump, a biological carbon pump driven by submesoscale O(<20 km) eddies. For the first time, my co-authors (Prof Laure Resplandy and Mathieu Poupon), detected this pump activity at the _global scale_, while previous research was focused on specific ocean regions (e.g. part of the Southern Ocean, Gulf Stream and Kuroshio). Instrumental to this work was the creation of a _statistical detection algorithm_ which advantageously replaced previous detection methods published in the literature and allowed us to apply this detection algorithm to the globe. This was an example of how simple but clever traditional statistical methods can help us answer open scientific questions which are intractable without it.
+For my general written exam at Princeton, I worked on the eddy subduction pump, a biological carbon pump driven by submesoscale eddies (scales below ~20 km). Together with Prof. Laure Resplandy and Mathieu Poupon, we detected this pump activity at the _global scale_ for the first time — previous work had been confined to specific ocean regions such as parts of the Southern Ocean, the Gulf Stream, and the Kuroshio. Central to this was a _statistical detection algorithm_ that replaced earlier detection methods and made it possible to apply the analysis globally using Argo float data. This work is now published in *Global Biogeochemical Cycles* [^keutgen2026] and was covered by [Phys.org](https://phys.org/news/2026-04-ocean-eddies-carbon.html) and [Eos](https://eos.org/research-spotlights/eddy-or-not-do-eddies-actually-transport-that-much-carbon).
 
 Currently, I am developing a new type of ocean biogeochemical models. Ocean biogeochemical models are ocean models which tell us where phytoplankton, zooplankton, and chemical elements such as carbon, oxygen, nitrogen are transported and through which processes.
 
@@ -26,3 +26,5 @@ I am currently building AI models of the ocean, trained on Princeton's tradition
 
 
 If you would like to get in touch—about research, science and society, the PhD application process at Princeton, or related topics—feel free to send me an email.
+
+[^keutgen2026]: Keutgen De Greef, M., Resplandy, L., & Poupon, M. A. (2026). Global eddy subduction carbon pump from Argo floats. *Global Biogeochemical Cycles*, 40, e2025GB008912. https://doi.org/10.1029/2025GB008912
