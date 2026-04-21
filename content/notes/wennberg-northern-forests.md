@@ -1,7 +1,7 @@
 +++
 title = "Climate Forcings of High-Latitude Northern Forests"
 kicker = "Seminar notes — Prof. Paul Wennberg (Caltech)"
-deck = "How is the boreal carbon sink changing? Remote sensing evidence for temperature-driven GPP growth, a striking mismatch with Earth system models, and what 3 °C of warming means for Northern forests."
+deck = "How is the boreal carbon sink changing? Remote sensing evidence for temperature-driven productivity growth, a striking mismatch with Earth system models, and what 3 °C of warming means for Northern forests."
 date = "2026-04-21"
 tags = ["climate", "carbon-cycle", "remote-sensing", "boreal-forest"]
 author = "Maxime Keutgen De Greef"
@@ -10,9 +10,9 @@ toc = true
 
 ## Context
 
-Talk by Prof. Paul Wennberg (Caltech). Primary references: Liu et al.,
-*AGU Advances* (2020) and Liu et al. (2026, *Geophysical Research Letters*,
-in review).
+Talk by Prof. Paul Wennberg (California Institute of Technology, Caltech).
+Primary references: Liu et al., *American Geophysical Union (AGU) Advances*
+(2020) and Liu et al. (2026, *Geophysical Research Letters*, in review).
 
 **Central question**: are the high-latitude northern forests a major
 contributor to the anthropogenic CO₂ sink?
@@ -24,7 +24,7 @@ half of all fossil-fuel carbon added to the atmosphere [^sellers2018]. The
 residual between the atmospheric growth rate and the ocean sink — derived
 algebraically — gives the land sink.
 
-Global budget (approximate, Pg C yr⁻¹):
+Global budget (approximate, Pg C yr⁻¹ — petagrams of carbon per year):
 
 | Source / sink | Pg C yr⁻¹ |
 |---|---|
@@ -50,8 +50,8 @@ large austral boreal forest.
 
 ### Solar-Induced Chlorophyll Fluorescence
 
-SIF arises from the absorption of sunlight by chlorophyll in the
-photosystem. Crucially, it is not merely a proxy for green cover: it tracks
+Solar-Induced Fluorescence (SIF) arises from the absorption of sunlight by
+chlorophyll in the photosystem. Crucially, it is not merely a proxy for green cover: it tracks
 **photosynthetic activity**. A leaf under afternoon heat stress fluoresces
 less than the same leaf in the morning.
 
