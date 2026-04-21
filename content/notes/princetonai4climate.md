@@ -32,7 +32,8 @@ He organises the problem across four domains:
 | Engineering design | Cooling, drag, embodied energy in hardware |
 | Ethics | Who benefits, who bears the cost? |
 
-Familiar analogues from other sectors: CAFE-style standards and labelling,
+Familiar analogues from other sectors: Corporate Average Fuel Economy
+(CAFE)-style standards and labelling,
 Jevons rebound effects, overshoot risks (tight buildings → indoor air
 quality; leaded gasoline → water contamination).
 
@@ -58,15 +59,16 @@ Lin works on climate impacts of tropical cyclones. The modelling chain runs
 from global climate scenarios down to individual infrastructure decisions:
 
 1. **Global scenarios** — plausible future climate states.
-2. **TC generation** — GCMs cannot resolve TCs at native resolution;
-   dedicated downscaling is required.
+2. **TC generation** — General Circulation Models (GCMs) cannot resolve
+   TCs at native resolution; dedicated downscaling is required.
 3. **Hazard modelling** — wind, storm surge, flooding.
 4. **Impact modelling** — effects on people, buildings, infrastructure.
 5. **Decision support** — how to act on the information.
 
 AI enters at every step. Three areas Lin highlighted:
 
-**Replace**: several AI models are now competitive with NWP for short-range
+**Replace**: several AI models are now competitive with Numerical Weather
+Prediction (NWP) for short-range
 forecasting. Open question: can we *trust* them? The reliability of the AI
 model depends partly on the reliability of the physical model used for
 training — and that physical model cannot resolve TCs well to begin with.
