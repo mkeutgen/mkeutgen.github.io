@@ -2,7 +2,7 @@
 title = "AI for Climate — Princeton Workshop"
 kicker = "Workshop notes — AI4Climate, Princeton"
 deck = "Three short takes: Socolow on AI energy demand and 1970s electricity parallels; Lin on AI-assisted tropical cyclone impact modelling; Lam on workflow gaps."
-date = "2026-04-21"
+date = "2026-04-17"
 tags = ["climate", "machine-learning", "energy", "tropical-cyclones"]
 author = "Maxime Keutgen De Greef"
 toc = true
