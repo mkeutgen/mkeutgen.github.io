@@ -9,7 +9,7 @@ type = "page"
 Author name appears as published. My full surname is *Keutgen De Greef*; on
 some early publications it was abbreviated to *Keutgen* or *De Greef*.
 
-**Keutgen De Greef, M.**, Resplandy, L., & Poupon, M. (2025). Global eddy subduction carbon pump from Argo floats. *ESS Open Archive*. (Submitted to *Global Biogeochemical Cycles*.) https://doi.org/10.22541/essoar.176005744.47156377
+**Keutgen De Greef, M.**, Resplandy, L., & Poupon, M. A. (2026). Global eddy subduction carbon pump from Argo floats. *Global Biogeochemical Cycles*, 40, e2025GB008912. https://doi.org/10.1029/2025GB008912
 
 **Keutgen De Greef, M.**, Weltje, G.J., & Gijbels, I. (2024). Estimating rock composition from replicate geochemical analyses: theory and application to magmatic rocks of the GeoPT database. *Mathematical Geosciences*, 56, 1539–1604. https://doi.org/10.1007/s11004-024-10138-5
 
