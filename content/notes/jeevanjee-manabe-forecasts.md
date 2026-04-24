@@ -6,7 +6,6 @@ date = "2026-04-24"
 tags = ["climate", "climate-models", "manabe", "gfdl", "seminar-notes"]
 author = "Maxime Keutgen De Greef"
 toc = true
-draft = true
 +++
 
 ## Context
