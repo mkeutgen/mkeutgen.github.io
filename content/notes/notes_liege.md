@@ -177,7 +177,22 @@ Several physical constraints are added: presence of the coastline, horizontal-di
 - Comparison of the field with temperature, salinity, and chlorophyll observations.
 - Decomposition of the field into orthogonal functions.
 
-{{< sidenote >}}My question to him afterwards: why not enforce a Helmholtz decomposition explicitly (rotational + divergent) rather than a divergence penalty? The penalty regularises but does not impose the physical constraint.{{< /sidenote >}}
+### Q&A — Helmholtz decomposition and scale-dependent balance
+
+I asked whether a Helmholtz decomposition of the 2D velocity field
+
+$$
+\mathbf{u} \;=\; \nabla^{\!\perp}\!\psi \;+\; \nabla\phi
+$$
+
+— with $\psi$ the streamfunction (rotational part) and $\phi$ the velocity potential (divergent part) — would be more natural than a soft divergence penalty applied to the interpolated velocity. The motivation rests on **platform-to-component mapping**:
+
+- The SWOT-derived geostrophic current $\mathbf{u}_g = (g/f)\nabla^{\!\perp}\!\eta$ is the perpendicular gradient of a scalar, so $\nabla\!\cdot\!\mathbf{u}_g = 0$ identically (modulo a tiny $\beta$-effect). **SWOT is, by construction, blind to surface divergence** — it constrains $\psi \approx (g/f)\eta$ and nothing else.
+- Drifters and HF radar, by contrast, sample the **total** surface velocity, divergent component included.
+- In potential space one could let SWOT pin $\psi$ directly, while drifters and HF radar additionally constrain $\phi$ — with separate correlation scales and variances for each, which is physically motivated since divergent kinetic energy is finer-scale and lower-energy than rotational KE.
+- The no-normal-flow coastline condition is naturally $\psi = \mathrm{const}$ along the boundary, rather than an awkward joint condition on $(u,v)$.
+
+A cleaner validation diagnostic than scalar RMSE on $(u,v)$ would be a rotational/divergent partition of the kinetic-energy spectrum (à la Bühler–Callies–Ferrari) — it would say where in the dynamics the interpolation gains or loses skill, which a scalar RMSE hides.
 
 ---
 
