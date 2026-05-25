@@ -6,10 +6,10 @@ date    = "2026-05-25"
 tags    = ["SWOT", "submesoscale", "vertical-velocity", "altimetry", "Liège-Colloquium", "conference"]
 author  = "Maxime Keutgen De Greef"
 toc     = true
-draft   = true
+draft   = false
 +++
 
-The 57th edition of the [Liège Colloquium on Ocean Dynamics](https://www.ocean-colloquium.uliege.be/) is dedicated to **Submesoscale Processes in the Ocean** and runs 25–29 May 2026 at the Université de Liège (GHER). What follows are running notes from talks I attended — bullet-style, faithful to the speaker, with my own questions in sidenotes.
+The 57th edition of the [Liège Colloquium on Ocean Dynamics](https://www.ocean-colloquium.uliege.be/) is dedicated to **Submesoscale Processes in the Ocean** and runs 25–29 May 2026 at the Université de Liège (GHER). What follows are running notes from talks I attended — bullet-style, hopefully faithful to the speaker, with my own questions in sidenotes.
 
 ---
 
@@ -196,17 +196,11 @@ Eddies are everywhere in oceans *and* lakes. In lakes, density is governed almos
 
 ---
 
-## René Schubert — Submesoscale imbalances in a flow-following framework
-
-*Affiliation — to be filled in._*
-
-Only a fragment captured: the talk touched on the role of centripetal and isallobaric effects, and on inertial oscillations as a source of imbalance in the ocean velocity field. Full notes — _(to be filled in)_.
-
 ---
 
 ## Aurélien Deniau — Global correlations between remote-sensing chlorophyll and SWOT ocean surface topography
 
-*Affiliation — to be filled in._*
+*Affiliation — CNES._*
 
 **Context:** the literature reports strong correlations between SWOT topography and surface chlorophyll. Main goal of the talk: better understand the biogeochemical interactions at small scales.
 
@@ -228,13 +222,12 @@ Only a fragment captured: the talk touched on the role of centripetal and isallo
 - DUACS Absolute Dynamic Topography (ADT) vs. KaRIn ADT: no major difference except in the equatorial band.
 - Small-scale (<100 km) results: exact colocation between altimetry pixels and chlorophyll pixels remains hard.
 
-{{< sidenote >}}The Deniau paper itself I haven't been able to track down — _(to be filled in)_.{{< /sidenote >}}
 
 ---
 
 ## "An unprecedented view of ocean currents from geostationary satellites" — GOFLOW
 
-*Speaker affiliation noted as Scripps in my notes; lead author Kaushik Srinivasan is at UCLA, with Luc Lenain at Scripps. Speaker identity — to be confirmed._*
+*Speaker is Srinivisaian; lead author Kaushik Srinivasan is at UCLA, with Luc Lenain at Scripps._*
 
 The talk presents the GOFLOW approach for retrieving surface currents from geostationary infrared imagery.[^srinivasan-2026]
 
