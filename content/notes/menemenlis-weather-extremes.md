@@ -142,7 +142,7 @@ for severe localized impacts anywhere across a wide area.
 
 ## Part 4 — Projected increase in dangerous heat exposure
 
-By mid-century, dangerous heat will reach millions of people.[^heat]
+By mid-century (2040–2059), dangerous heat will reach millions of incarcerated people in US prisons.[^heat]
 
 The heat metric combines temperature and humidity. The change in exposure
 $\Delta E$ splits into three terms:
@@ -159,10 +159,10 @@ is their interaction.
 - **Humidity dominates:** 68% of the increase in population-weighted
   dangerous heat exposure is attributable to humidity.
 - **Extremely dangerous heat** (heat index of 125 °F, about 52 °C, or more) was
-  very rare in the 1990–2009 baseline. Only 3 facilities, all in southern
+  very rare in the 1990–2009 baseline. Only 3 prisons, all in southern
   Texas, saw more than 10 such days per year.
 - **By mid-century**, exposure rises from 1.7 to 12.9 million person-days. The
-  number of facilities exposed 10 or more days per year rises from 3 to 947.
+  number of prisons exposed 10 or more days per year rises from 3 to 947.
 
 ## Summary
 
@@ -188,4 +188,4 @@ is their interaction.
 
 [^ida]: Menemenlis, S., Vecchi, G. A., Gao, K., Smith, J. A., & Cheng, K.-Y. (2024). Extreme rainfall risk in Hurricane Ida's extratropical stage: An analysis with convection-permitting ensemble hindcasts. *Journal of the Atmospheric Sciences*, 81(7), 1165–1179. https://doi.org/10.1175/JAS-D-23-0160.1
 
-[^heat]: Menemenlis, S., et al. Projected dangerous heat exposure. _(to be filled in)_
+[^heat]: Menemenlis, S., et al. Projected dangerous heat exposure in US prisons. _(to be filled in)_
