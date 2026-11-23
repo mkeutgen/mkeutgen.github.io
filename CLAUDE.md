@@ -14,6 +14,7 @@ Hugo static site, theme: archie, deployed to GitHub Pages.
 | `content/about.md` | Short bio page |
 | `content/cv.md` | CV |
 | `content/notes/*.md` | Seminar and reading-group notes |
+| `content/notes/geo428/*.md` | GEO428 course lecture notes. Published but **unlisted**: `_index.md` cascades `build.list = "local"` and `params.unlisted = true`, so they stay off the notes list, home, RSS and tag pages. Only entry point: the faint "GEO428 lecture notes" button at the bottom of `/notes/`. Keep `draft = false` here (user's choice, 2026-11-23). |
 
 **Consistency rule**: whenever a publication status changes (preprint → published,
 new paper added, citation corrected), update **both** `publications.md` and every

@@ -394,6 +394,24 @@ img {
 .byline-sep { margin-inline: 0.45rem; color: var(--ft-rule); }
 .draft-label { color: var(--ft-teal); font-weight: 600; }
 
+/* Faint button to unlisted course notes (notes list page) */
+.quiet-link-wrap { margin-block-start: 3rem; }
+.quiet-link {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: var(--ft-quiet);
+  border: 1px solid var(--ft-rule);
+  border-radius: 999px;
+  text-decoration: none !important;
+  opacity: 0.55;
+  transition: opacity 0.15s ease, color 0.15s ease;
+}
+.quiet-link:hover,
+.quiet-link:focus { opacity: 1; color: var(--ft-muted); }
+
 .article-body { /* container; spacing already provided by paragraph rules */ }
 
 /* Article footer (tags) */

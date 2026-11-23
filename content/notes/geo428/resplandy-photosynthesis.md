@@ -6,7 +6,7 @@ date    = "2026-09-21"
 tags    = ["photosynthesis", "Calvin-cycle", "RuBisCO", "pigments", "carbon-concentrating-mechanisms", "biological-oceanography", "geo428"]
 author  = "Maxime Keutgen De Greef"
 toc     = true
-draft   = true
+draft   = false
 +++
 
 ## Two linked reactions

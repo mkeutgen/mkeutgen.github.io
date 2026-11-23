@@ -6,7 +6,7 @@ date    = "2026-10-12"
 tags    = ["zooplankton", "tunicates", "grazing", "biogeochemistry", "biological-oceanography", "geo428"]
 author  = "Maxime Keutgen De Greef"
 toc     = true
-draft   = true
+draft   = false
 +++
 
 ## Why zooplankton matter

@@ -6,7 +6,7 @@ date    = "2026-09-23"
 tags    = ["nutrients", "Redfield-ratio", "nutrient-limitation", "co-limitation", "trace-metals", "biological-oceanography", "geo428"]
 author  = "Maxime Keutgen De Greef"
 toc     = true
-draft   = true
+draft   = false
 +++
 
 Building biomass takes more than carbon. The lecture had three parts:

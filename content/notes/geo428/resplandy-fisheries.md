@@ -6,7 +6,7 @@ date    = "2026-11-16"
 tags    = ["fisheries", "trophic-transfer", "primary-production-required", "stock-assessment", "match-mismatch", "biological-oceanography", "geo428"]
 author  = "Maxime Keutgen De Greef"
 toc     = true
-draft   = true
+draft   = false
 +++
 
 ## Why fisheries matter

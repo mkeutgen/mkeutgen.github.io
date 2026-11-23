@@ -6,7 +6,7 @@ date    = "2026-11-23"
 tags    = ["microbial-loop", "bacteria", "viruses", "metagenomics", "mixoplankton", "biological-oceanography", "geo428"]
 author  = "Maxime Keutgen De Greef"
 toc     = true
-draft   = true
+draft   = false
 +++
 
 The lecture had three parts: who does what, how we observe organisms too

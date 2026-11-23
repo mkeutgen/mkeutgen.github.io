@@ -1,0 +1,17 @@
+{{ define "main" }}
+<h1 class="page-title">All tags</h1>
+
+{{/* Overrides the archie theme: counts skip unlisted pages (e.g. notes/geo428),
+     and tags used only by unlisted pages are hidden. */}}
+{{ $data := .Data }}
+<div class="tag-cloud">
+	<ul class="tags">
+		{{ range $key, $value := .Data.Terms.ByCount }}
+		{{ $n := len (where $value.Pages "Params.unlisted" "!=" true) }}
+		{{ if gt $n 0 }}
+		<li><a style="font-size: 1rem;" href="{{ $.Site.LanguagePrefix | absURL }}{{ $data.Plural }}/{{ $value.Name | urlize }}/">{{ $value.Name }} ({{ $n }})</a></li>
+		{{ end }}
+		{{ end }}
+	</ul>
+</div>
+{{ end }}

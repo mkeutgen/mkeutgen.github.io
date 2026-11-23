@@ -6,7 +6,7 @@ date    = "2026-09-14"
 tags    = ["plankton", "Reynolds-number", "viscosity", "diffusion", "phycosphere", "biological-oceanography", "geo428"]
 author  = "Maxime Keutgen De Greef"
 toc     = true
-draft   = true
+draft   = false
 +++
 
 ## The plankton size spectrum

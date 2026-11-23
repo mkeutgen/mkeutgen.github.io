@@ -6,7 +6,7 @@ date    = "2026-10-05"
 tags    = ["light-limitation", "euphotic-zone", "P-I-curve", "ocean-optics", "biological-oceanography", "geo428"]
 author  = "Maxime Keutgen De Greef"
 toc     = true
-draft   = true
+draft   = false
 +++
 
 My notes from this lecture are an outline only. The sections below give the

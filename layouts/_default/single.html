@@ -36,7 +36,7 @@
       </section>
     </div>
 
-    {{ if .Params.tags }}
+    {{ if and .Params.tags (not .Params.unlisted) }}
       <footer class="article-tags">
         <ul class="tags">
           {{ range .Params.tags }}

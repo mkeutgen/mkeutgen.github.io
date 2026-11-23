@@ -6,7 +6,7 @@ date    = "2026-11-02"
 tags    = ["new-production", "f-ratio", "nitrification", "biological-pump", "export", "Martin-curve", "biological-oceanography", "geo428"]
 author  = "Maxime Keutgen De Greef"
 toc     = true
-draft   = true
+draft   = false
 +++
 
 ## Three fates

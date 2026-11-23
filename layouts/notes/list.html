@@ -8,7 +8,9 @@
   </header>
 
   <ul class="post-index">
-    {{ range .Pages.ByDate.Reverse }}
+    {{ $pages := .RegularPages.ByDate.Reverse }}
+    {{ if .Params.ascending }}{{ $pages = .RegularPages.ByDate }}{{ end }}
+    {{ range $pages }}
       <li class="post-index-item">
         <a class="post-index-link" href="{{ .RelPermalink }}">
           <p class="post-index-meta">
@@ -22,5 +24,12 @@
       </li>
     {{ end }}
   </ul>
+
+  {{/* Faint link to the unlisted course notes, shown only on the top-level notes page */}}
+  {{ if eq .RelPermalink "/notes/" }}
+    {{ with site.GetPage "/notes/geo428" }}
+      <p class="quiet-link-wrap"><a class="quiet-link" href="{{ .RelPermalink }}">GEO428 lecture notes →</a></p>
+    {{ end }}
+  {{ end }}
 </main>
 {{ end }}
