@@ -154,11 +154,28 @@ At steady state, export balances new production. ALOHA relies mostly on
 regenerated production, has a low f-ratio, and so exports less relative to its
 NPP than K2.
 
+Transfer efficiency differs too. VERTIGO found that about 20% of the flux at
+150 m reached 500 m at ALOHA, against about 50% at K2. Flux fades faster
+(larger $b$) at ALOHA. K2 remineralises a smaller *fraction* of its sinking
+flux in the twilight zone, though more carbon in absolute terms, because it
+exports more. Three reasons:
+
+- Large diatom aggregates and big fecal pellets at K2 sink fast, so they spend
+  less time being eaten on the way down.
+- Cold water slows bacterial respiration. Across sites, $b$ rises with the
+  temperature of the upper 500 m.[^marsay]
+- At ALOHA, small, slow-sinking particles are mostly recycled near the top.
+
+The pattern depends on the depth range. Below about 1000 m, syntheses of
+sediment-trap data find the opposite: high latitudes transfer carbon less
+efficiently than the subtropics, probably because carbonate minerals weigh
+down and protect particles at depth.[^henson]
+
 {{< sidenote >}}
-My raw note recorded $b$ as higher at K2 than at ALOHA. VERTIGO reported the
-opposite: transfer efficiency from 150 to 500 m of about 20% at ALOHA and about
-50% at K2, so flux fades faster (larger $b$) at ALOHA. Check the slide. My note
-also placed K2 in the North Atlantic; it is in the North Pacific.
+My raw note recorded $b$ as higher at K2 than at ALOHA. That matches the
+deep-trap pattern, not VERTIGO's 150–500 m result. Check which depth range the
+slide used. My note also placed K2 in the North Atlantic; it is in the North
+Pacific.
 {{< /sidenote >}}
 
 ## From export to carbon storage
@@ -185,5 +202,9 @@ centuries.[^siegel]
 [^buesseler09]: Buesseler, K. O., & Boyd, P. W. (2009). Shedding light on processes that control particle export and flux attenuation in the twilight zone of the open ocean. *Limnology and Oceanography*, 54(4), 1210–1232.
 
 [^vertigo]: Buesseler, K. O., Lamborg, C. H., Boyd, P. W., et al. (2007). Revisiting carbon flux through the ocean's twilight zone. *Science*, 316, 567–570.
+
+[^marsay]: Marsay, C. M., Sanders, R. J., Henson, S. A., Pabortsava, K., Achterberg, E. P., & Lampitt, R. S. (2015). Attenuation of sinking particulate organic carbon flux through the mesopelagic ocean. *Proceedings of the National Academy of Sciences*, 112(4), 1089–1094.
+
+[^henson]: Henson, S. A., Sanders, R., & Madsen, E. (2012). Global patterns in efficiency of particulate organic carbon export and transfer to the deep ocean. *Global Biogeochemical Cycles*, 26, GB1028.
 
 [^siegel]: Siegel, D. A., DeVries, T., Doney, S. C., & Bell, T. (2021). Assessing the sequestration time scales of some ocean-based carbon dioxide reduction strategies. *Environmental Research Letters*, 16, 104003.
