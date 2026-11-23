@@ -172,10 +172,11 @@ efficiently than the subtropics, probably because carbonate minerals weigh
 down and protect particles at depth.[^henson]
 
 {{< sidenote >}}
-My raw note recorded $b$ as higher at K2 than at ALOHA. That matches the
-deep-trap pattern, not VERTIGO's 150–500 m result. Check which depth range the
-slide used. My note also placed K2 in the North Atlantic; it is in the North
-Pacific.
+My raw note recorded $b$ as higher at K2 than at ALOHA. ALOHA and K2 are the
+two VERTIGO sites, and VERTIGO's traps went no deeper than 500 m, where it
+found the opposite. The note most likely mixed up $b$ with K2's higher export
+relative to NPP, which is what its own reasoning about the f-ratio describes.
+The note also placed K2 in the North Atlantic; it is in the North Pacific.
 {{< /sidenote >}}
 
 ## From export to carbon storage
